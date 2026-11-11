@@ -10,6 +10,8 @@ import {
 
 const router = express.Router();
 
+
+
 // to get all of the productss
 router.get("/", getAllProducts); // "/"  means take whatever base path which is specified in appjs
 

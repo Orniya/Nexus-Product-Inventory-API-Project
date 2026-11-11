@@ -22,7 +22,7 @@ app.use(express.json());
 app.use("/products", productRoutes);
 
 // Handle unknown routes
-app.use((req, res) => {
+app.use((req, res) => { //registers middleware | runs after the product routes doesn't match with a given route
   res.status(404).json({ message: "Route not found" }); // sends json response containing the error message
 });
 
